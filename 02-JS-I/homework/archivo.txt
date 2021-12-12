@@ -1,0 +1,9 @@
+VARIABLE- Una variable es como si fuera una herramienta que guardamos en una caja que nos sirve para utilizar 
+cuando necesitemos.
+STRING - Es una cadena de letras que sirven para por ejemplo dar un msje de saludo entre otras cosas.
+FUNCIONES-  Una variable es una herramienta;  podemos tener
+muchas mas herramientas que podemos usar y la manera de hacerlo es darle la utilidad para lo que se creo esa herramienta.
+las mismas nos van a dar un resultado luego de utilizarlas pero para eso tenemos que darle un hecho que cumpla la tarea.
+IF - Significa SI ,un ej. de IF es, dar un regalo pero solamente SI aprobas el examen de la escuela.
+BOOLEANOS - Son dos valores (TRUE o FALSE) un ej. seria, si un vaso(de vidrio) es de vidrio y contestas si lo es ,eso es verdad osea TRUE(valor booleano) 
+y si decis no ,ese vaso es de plastico entonces seria falso porque no lo es o FALSE(valor booleano).
