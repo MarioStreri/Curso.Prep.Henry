@@ -171,32 +171,73 @@ function empiezaConNueve(n) {
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
 
- 
-    
-  
+  var string = n.toString();
+
+    if(string[0] === "9"){
+      return true;
+    }else{
+      return false;
+    }
 }
 
 
 function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
-  //Escribe tu código aquí  
+  //Escribe tu código aquí 
+  var arrayIguales = [];
   
-} 
-
+  for(var i = 0; i < arreglo.length ; i++){
+    if(arreglo[0] === arreglo[i]){
+      arrayIguales.push(arreglo[i]);
+    } 
+  }
+  if(arreglo.length === arrayIguales.length){
+    return true;
+  }else{
+    return false;
+  }
+}
 
 function mesesDelAño(array) {
-  //Dado un array que contiene algunos meses del año desordenados, recorrer el array buscando los meses de 
-  // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
-  //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
-  // Tu código:
+//Dado un array que contiene algunos meses del año desordenados, recorrer el array buscando los meses de 
+// "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
+//Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
+// Tu código:
+var arrayMeses = [];
+
+for(var i = 0; i<array.length ; i++){
+  switch (array[i]) {
+    case "Enero":
+        arrayMeses.push(array[i]);
+      break;
+    case "Marzo":
+        arrayMeses.push(array[i]);
+        break;
+    case "Noviembre":
+        arrayMeses.push(array[i]);   
+      break;
+  }
+}
+  if(arrayMeses.length === 3 ){
+    return arrayMeses;
+  }else{
+    return "No se encontraron los meses pedidos";
+  }
 }
 
 
 function mayorACien(array) {
-  //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
-  //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
-  // Tu código:
+//La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
+//valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
+// Tu código:
+var mayoresCien = [];
+
+for(var i = 0; i<array.length ; i++){
+  if(array[i]>100){
+    mayoresCien.push(array[i]);
+  }
+}return mayoresCien;
 }
 
 
@@ -208,6 +249,7 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
+  
 }
 
 
