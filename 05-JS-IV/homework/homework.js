@@ -32,13 +32,14 @@ function invocarMetodo(objeto, metodo) {
   // Invoca ese método
   // Nada necesita ser devuelto ("returned")
   // Tu código:
+  objeto[metodo]();
 }
 
 function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
   // "objetoMisterioso" tiene una propiedad llamada "numeroMisterioso"
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
-
+  return objetoMisterioso["numeroMisterioso"] * 5;
 }
 
 function eliminarPropiedad(objeto, unaPropiedad) {
@@ -46,13 +47,19 @@ function eliminarPropiedad(objeto, unaPropiedad) {
   // tip: tenes que usar bracket notation
   // Devuelve el objeto
   // Tu código:
+  delete objeto[unaPropiedad];
+  return objeto;
 }
 
 function nuevoUsuario(nombre, email, password) {
   // Crea un nuevo objeto con las propiedades coincidiendo con los argumentos que se pasan a la función
   // Devuelve el objeto
   // Tu código:
-
+    nuevoObjeto= {
+      nombre: nombre,
+      email : email,
+      password : password,
+    }; return nuevoObjeto;
 }
 
 function tieneEmail(usuario) {
